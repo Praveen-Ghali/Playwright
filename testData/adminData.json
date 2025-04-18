@@ -1,0 +1,15 @@
+{
+    "Ausn":"admin@admin.com",
+    "Apwd":"admin@123",
+    "Dept":"Dermatologists",
+    "workingHr":"10.30AM to 07.30PM",
+    "DoctotDetails":{
+        "name":"Dr.Vinayak",
+        "email":"vinayak@gmail.com",
+        "pwd":"vinay@123",
+        "address":"At Post Pune Swargate Maharashtra",
+        "phoneNum":"9860131013",
+        "option":"Dermatologist",
+        "description":"MD in Dermatologists"
+    }
+}

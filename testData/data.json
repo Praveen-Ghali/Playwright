@@ -1,0 +1,25 @@
+[{
+    "usn":"student1",
+    "pwd":"password1",
+    "url":"url1"
+},
+{
+    "usn":"student2",
+    "pwd":"password2",
+    "url":"url2"
+},
+{
+    "usn":"student3",
+    "pwd":"password3",
+    "url":"url3"
+},
+{
+    "usn":"student4",
+    "pwd":"password4",
+    "url":"url4"
+},
+{
+    "usn":"student5",
+    "pwd":"password5",
+    "url":"url5"
+}]
