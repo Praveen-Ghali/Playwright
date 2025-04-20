@@ -8,7 +8,7 @@ class login{
 
     }
     async url(){
-        await this.page.goto("http://106.51.82.61:9007/")
+        await this.page.goto("/")
     }
     async kmcAdminLogin(un,pwd){
         await this.un.fill(un)
