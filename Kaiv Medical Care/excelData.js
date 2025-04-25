@@ -1,4 +1,4 @@
-import excel from "exceljs"
+//import excel from "exceljs"
 import {test} from "@playwright/test"
 test('read excel data',async({page})=>{
     await seletData(1,1);

@@ -1,6 +1,6 @@
 import {test,expect} from "@playwright/test"
 import excel from "exceljs"
-test.only('read data from the excel',async({page})=>{
+test('read data from the excel',async({page})=>{
     let book=new excel.Workbook();
     await book.xlsx.readFile('testData/HMSLogin.xlsx')
     let sheet=book.getWorksheet("Sheet1")

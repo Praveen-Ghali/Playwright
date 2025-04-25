@@ -10,7 +10,7 @@ import kmcPatient from "../Kaiv Medical Care/kmcPatient.js"
 import testdata from "../testData/adminData.json"
 //const testdata=JSON.parse(JSON.stringify(require("../testData/sigleData.json")))
 
-test.only("Login as a admin and create new department and new Doctor profile logout from the application",async({page})=>{
+test("Login as a admin and create new department and new Doctor profile logout from the application",async({page})=>{
     const adminUN=testdata.Ausn
     const adminPWD=testdata.Apwd
     let Login=new login(page)
@@ -20,7 +20,10 @@ test.only("Login as a admin and create new department and new Doctor profile log
     await Dashboard.dashboard()
     
     let Department=new kmcAdminDepartment(page)
-    await Department.department(testdata.Dept,testdata.workingHr)
+    const d1=testdata.Dept
+    console.log(d1);
+    
+    await Department.department(d1,testdata.workingHr)
     
     let Doctor=new kmcAdminDoctor(page)
     const name=testdata.DoctotDetails.name;
@@ -74,3 +77,5 @@ test("Logion as a Patient and take appointment for the doctor then logout and lo
     await expect(await page.locator("//div[text()='Appointment Info Approved']")).toBeVisible()
     await page.pause()
 })
+
+ 

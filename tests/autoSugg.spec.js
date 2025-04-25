@@ -12,7 +12,7 @@ for (const item of listItems) {
 });
 //await page.pause()
 
-test.only("javascript autosuggestion",async({page})=>{
+test("javascript autosuggestion",async({page})=>{
   await page.goto("https://www.google.com/");
   await page.locator("#APjFqb").fill("javascript");
   await page.waitForSelector("(//div[@class='OBMEnb'])[1]/ul/li//span");

@@ -15,12 +15,12 @@ test("handle multiple frame",async({page})=>{
     await frame1.locator("#password").fill(pwd1)
     await frame1.locator("#confirm-password").fill(cPwd)
     await frame1.locator("//button[text()='Sign Up']").click()
-    // const v1=await page.locator("//div[text()='Sign up successful!']")
-    // await expect(v1).toBeVisible()
+    const v1=await page.locator("//div[text()='Sign up successful!']")
+    await expect.soft(v1).toBeVisible()
 
-    // const frame2=await page.frameLocator("(//iframe)[2]")
-    // await frame2.locator("#username").fill(email2)
-    // await frame2.locator("#password").fill(pwd2)
+    const frame2=await page.frameLocator("(//iframe)[2]")
+    await frame2.locator("#username").fill(email2)
+    await frame2.locator("#password").fill(pwd2)
 
 
 })
